@@ -1,0 +1,159 @@
+:root {
+    --b-bg-color:#ffffff;
+    --bor-color:#ff0808;
+    --bor-whith:4px;
+    --bor-radius:20%;
+    --text-inline:normal;
+}
+
+@font-face {
+    font-family:"VazirLocal";
+    src: url(../fonts/Vazir-Medium.woff2);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family:"VazirLocal";
+    src: url(../fonts/Vazir-Black.woff2);
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+}
+
+body {
+    background-color:darkgray;
+    font-family: "VazirLocal", sans-serif;
+}
+
+header {
+    height: 80px;
+    background: #bbbdffc7;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 10px;
+    font-size: 22px;
+    top: 0;
+    cursor: pointer;
+}
+
+.logo {
+    justify-self: start;
+    padding: 8px 8px ;
+     width: 150px;
+    height: auto;
+}
+
+nav {
+    align-items: center;
+    top: 20px;
+    position: fixed;
+    display: flex;
+    height: 30px;
+    justify-self: center;
+    background-color: darkgreen;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav > ul { 
+  display: flex ;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav ul li ul li{
+    text-decoration: none;
+    position: relative;
+    display: none;
+    padding: 8px;
+    margin: 8px;
+    color: #000;
+}
+
+nav > ul > li:hover {
+   li  {
+    display: block;
+   }
+}
+
+li > ul {
+    font-weight: var(--text-inline);
+    margin: 15px;
+   position: absolute; 
+   background-color: aliceblue;
+   border-radius: 10px;
+}
+
+ button {
+    border-color: var(--bor-color);
+    border-width:var(--bor-whith);
+    margin-top: 20px;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: var(--b-bg-color);
+    justify-self: end;
+    border-radius: var(--bor-radius);
+    cursor: pointer;
+}
+
+.img-1 {
+    margin-top: 20px;
+    width: 100%;
+}
+.ts1{
+    justify-content: center;
+    top: 50px;
+}
+
+.grid-par {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+footer{
+    background-color: darkolivegreen;
+}
+
+.grid {
+    justify-self: start;
+    padding: 8px 8px ;
+     width: 150px;
+    height: auto;
+}
+
+.muno {
+    justify-self: center;
+    display: flex;
+}
+
+ li {
+    list-style: none;
+} 
+
+a {
+    text-decoration: none;
+}
+
+.aykon {
+    justify-self: end ;
+}
+
+@media (max-width:480px) {
+    .grid-par {
+    grid-template-columns: 1fr ;
+}
+
+}
+.container {
+    width: 80%;
+}
+
